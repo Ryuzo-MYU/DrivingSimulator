@@ -5,8 +5,11 @@ MYU空間情報コンピューティング チームAのコラボレーション
 1. Unityで新しく、"DrivingSimulator"のプロジェクトを作成する
 2. プロジェクトフォルダを開く
 3. プロジェクトフォルダの場所でGit bash を開く\
-   僕の場合`(PCの識別名) MINGW64 ~/(プロジェクトフォルダの親フォルダ)/DriveSimulator (main)`\
-   Git bash開いてこんな感じになればOK
+   僕の場合
+   ```
+   (PCの識別名) MINGW64 ~/(プロジェクトフォルダの親フォルダ)/DriveSimulator (main)
+   ```
+   Git bash開いてこんな感じに表示されればOK
 5. `git init`
 6. `git remote add origin (このリポジトリのURL)`
 7. `git pull origin main`で、githubに上がっている、Unityプロジェクトの本番環境データを入れることができる\
