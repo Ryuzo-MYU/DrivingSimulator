@@ -2,17 +2,17 @@
 MYU空間情報コンピューティング チームAのコラボレーション用リポジトリ
 
 # 作業環境の構築
-1. Unityで新しく、"DrivingSimulator"のプロジェクトを作成する
-2. プロジェクトフォルダを開く
-3. プロジェクトフォルダの場所でGit bash を開く\
+1. Unityのプロジェクトを入れているフォルダに"DrivingSimulator"のフォルダを作成する(すでにある場合、それを上書きしてもよければ使ってもいい)
+2. プロジェクトフォルダの場所でGit bash を開く\
    僕の場合
    ```
    (PCの識別名) MINGW64 ~/(プロジェクトフォルダの親フォルダ)/DriveSimulator (main)
    ```
    Git bash開いてこんな感じに表示されればOK
-5. `git init`
-6. `git remote add origin (このリポジトリのURL)`
-7. `git pull origin main`で、githubに上がっている、Unityプロジェクトの本番環境データを入れることができる\
+3. `git init`
+4. `git remote add origin (このリポジトリのURL)`
+   なおミスった場合、`git remote set-url origin (このリポジトリのURL)`でURLの修正が可能です
+5. `git pull origin main`で、githubに上がっている、Unityプロジェクトの本番環境データを入れることができる\
    すでに作業を進めていた場合、プロジェクトフォルダ内でpullしてしまうと作業内容が消し飛ぶので注意！！！\
    作業内容を一旦プロジェクト外に避難させた方がいい
 
@@ -42,7 +42,7 @@ git checkout -b (新しいブランチ名)
 3. 作業内容を自分のブランチにコミットする\
   この辺はcommit -> push の流れと同じ
 
-4. 問題がなければ本番環境に適用する\
+5. 問題がなければ本番環境に適用する\
   mergeっていうらしい。やったことないので詳細は追って調べます。
 
 # 使い方構想
