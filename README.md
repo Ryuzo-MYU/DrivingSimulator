@@ -10,7 +10,7 @@ MYU空間情報コンピューティング チームAのコラボレーション
    ```
    Git bash開いてこんな感じに表示されればOK
 3. `git init`
-4. `git remote add origin (このリポジトリのURL)`
+4. `git remote add origin (このリポジトリのURL)`\
    なおミスった場合、`git remote set-url origin (このリポジトリのURL)`でURLの修正が可能です
 5. `git pull origin main`で、githubに上がっている、Unityプロジェクトの本番環境データを入れることができる\
    すでに作業を進めていた場合、プロジェクトフォルダ内でpullしてしまうと作業内容が消し飛ぶので注意！！！\
