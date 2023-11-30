@@ -25,7 +25,18 @@ public class CarMove : MonoBehaviour
                 axleInfo.leftWheel.motorTorque = motor;
                 axleInfo.rightWheel.motorTorque = motor;
             }
+            ApplyLocalPositionToVisuals(axleInfo.rightWheel);
+            ApplyLocalPositionToVisuals(axleInfo.leftWheel);
         }
+    }
+    public void ApplyLocalPositionToVisuals(WheelCollider collider)
+    {
+        Transform visualWheel = collider.transform.GetChild(0);
+        Vector3 position;
+        Quaternion rotation;
+        collider.GetWorldPose(out position, out rotation);
+        visualWheel.transform.position = position;
+        visualWheel.transform.rotation = rotation;
     }
 }
 
