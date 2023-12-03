@@ -33,8 +33,8 @@ public class CarMove : MonoBehaviour
 [System.Serializable]
 public class AxleInfo
 {
-    public WheelCollider leftWheel;
     public WheelCollider rightWheel;
+    public WheelCollider leftWheel;
     public bool motor; //駆動輪か?
     public bool steering; //ハンドル操作をしたときに角度が変わるか？
 }
