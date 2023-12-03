@@ -1,4 +1,0 @@
-repository "DriveSimulator@MYUSpacialInfo_teamA@cloud"
-  path "/"
-    br "/main"
-    co "/main"
