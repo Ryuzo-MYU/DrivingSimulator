@@ -46,13 +46,13 @@ public class CarMove : MonoBehaviour
     /// <param name="collider"></param>
     public void ApplyLocalPositionToVisuals(WheelCollider collider)
     {
-        Transform visualWheel = collider.transform.GetChild(0);
+        var visualWheel = collider.transform.GetChild(0);
         Debug.Log(visualWheel.name);
+        var visualAngle = visualWheel.transform.localEulerAngles;
         Vector3 position;
         Quaternion rotation;
         collider.GetWorldPose(out position, out rotation);
-        visualWheel.transform.position = position;
-        visualWheel.transform.rotation = rotation;
+        visualWheel.SetLocalPositionAndRotation(position, rotation);
     }
 }
 
